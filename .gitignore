@@ -1,0 +1,29 @@
+# Python 编译缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 敏感配置文件
+login.ini
+setting.json
+
+# 日志文件
+log/
+*.log
+
+# 临时文件
+*.tmp
+.DS_Store

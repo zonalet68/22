@@ -1,0 +1,42 @@
+依赖包安装教程
+===================================
+
+一、打开命令行
+-------------
+按 Win + R 键，输入 cmd，按回车
+
+
+二、安装依赖
+-----------
+直接复制以下命令到命令行，按回车执行：
+
+    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+三、常见问题
+-----------
+
+1. 提示 "'pip' 不是内部或外部命令"
+   
+   先安装 Python：https://www.python.org/downloads/
+   安装时记得勾选 "Add Python to PATH"
+
+2. 提示 numpy 版本错误
+   
+   执行以下命令：
+   pip uninstall numpy -y
+   pip install "numpy<2.0.0" -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+3. 提示权限错误
+   
+   以管理员身份运行命令行（右键 "以管理员身份运行"）
+
+4. 提示 SSL 证书错误
+   
+   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn/simple
+
+
+四、验证安装
+-----------
+运行项目测试：
+    python main.py
